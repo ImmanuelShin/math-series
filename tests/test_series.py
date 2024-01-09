@@ -21,19 +21,19 @@ def test_fib_seven():
   expected = 13
   assert actual == expected
 
-def test_luc_one():
-  actual = lucas(1)
+def test_luc_zero():
+  actual = lucas(0)
   expected = 2
   assert actual == expected
 
-def test_luc_two():
-  actual = lucas(2)
+def test_luc_one():
+  actual = lucas(1)
   expected = 1
   assert actual == expected
 
 def test_luc_seven():
   actual = lucas(7)
-  expected = 18
+  expected = 29
   assert actual == expected
 
 def test_sumf_seven():
@@ -43,5 +43,5 @@ def test_sumf_seven():
 
 def test_suml_seven():
   actual = sum_series(7, 2)
-  expected = 18
+  expected = 29
   assert actual == expected

@@ -26,17 +26,17 @@ def lucas(n):
   Returns:
     int: nth value
   '''
-  if n < 1:
+  if n < 0:
     print("Invalid input: 0 or negative index")
   
-  elif n == 1:
+  elif n == 0:
     return 2
   
-  elif n == 2:
+  elif n == 1:
     return 1
   
   else: 
-    return lucas(n-1) + lucas(n-2)
+    return lucas(n-2) + lucas(n-1)
   
 def sum_series(n, op=0, op1=1):
   '''
